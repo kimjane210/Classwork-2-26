@@ -1,0 +1,39 @@
+#Same Last Character
+def same_last(str1, str2):
+    if len(str1)-1 == len(str1)-1:
+        return True
+
+same_last('apple','airplane')
+
+
+#Counting Spaces
+def count_spaces(str1):
+    counter = 0
+    for x in str1:
+        if x == " ":
+            counter += 1
+    return counter
+
+count_spaces('hello my name is ali')
+
+
+#Counting Nonspaces
+def count_nonspaces(str1):
+    counter = 0
+    for x in str1:
+        if x != " ":
+            counter += 1
+    return counter
+
+count_nonspaces('hello my name is ali')
+
+
+#Remove Vowels
+def devowel(str1):
+    vowels = ('a','e','i','o','u')
+    for x in str1:
+        if x in vowels:
+            str1 = str1.replace(x, '')
+    return str1
+    
+devowel('hello')

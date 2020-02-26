@@ -1,9 +1,11 @@
 #Same Last Character
 def same_last(str1, str2):
-    if len(str1)-1 == len(str1)-1:
+    if str1[len(str1)-1] == str2[len(str2)-1]:
         return True
+    else:
+        return False
 
-same_last('apple','airplane')
+same_last("appl", "airplane")
 
 
 #Counting Spaces
